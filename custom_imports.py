@@ -13,6 +13,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 import os
+import pickle
 
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegressionCV, Lasso, LogisticRegression
