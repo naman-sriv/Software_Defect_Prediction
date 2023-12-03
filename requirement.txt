@@ -11,3 +11,4 @@ nbformat
 kneed
 imblearn
 Flask
+gunicorn
