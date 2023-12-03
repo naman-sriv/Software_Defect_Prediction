@@ -1,1 +1,32 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Defect Prediction</title>
+</head>
+<body>
+    <h1>Software Defect Prediction</h1>
+    <form method="POST" action="{{ url_for('predict')}}">
+        <label for="v(g)">v(g):</label> 
+        <input type="text" id="v(g)" name="v(g)"><br>
+      
+        <label for="uniq_Opnd">uniq_Opnd:</label>
+        <input type="text" id="uniq_Opnd" name="uniq_Opnd"><br>
+      
+        <label for="lOComment">lOComment:</label>
+        <input type="text" id="lOComment" name="lOComment"><br>
+      
+        <label for="lOBlank">lOBlank:</label>
+        <input type="text" id="lOBlank" name="lOBlank"><br>
+      
+        <label for="v">v:</label>
+        <input type="text" id="v" name="v"><br>
+      
+        <input type="submit" value="Submit">
+      </form>
+
+      {{prediction_text}}
+    
+</body>
+</html>
