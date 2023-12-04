@@ -14,10 +14,10 @@ jobs:
       - name: Build, Push and Release a Docker container to Heroku
         uses: gonuit/heroku-docker-deploy@v1.3.3
         with:
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: ${{ secrets.HEROKU_APP_NAME }} #Must be unique in Heroku
-          heroku_email: ${{ secrets.HEROKU_EMAIL }}
-
+          
           dockerfile_directory: ./
           dockerfile_name: Dockerfile
           docker_options: "--no-cache"
